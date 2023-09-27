@@ -24,7 +24,9 @@ export const HomePage = () => {
           <Input
             value={userName}
             onChange={(e) => setUserName(e.target.value)}
-            placeholder='enter username' />
+            placeholder='enter username'
+            autoComplete="off"
+            />
         </FormControl>
 
         <Button mt={'20px'} onClick={handleSubmit}>submit</Button>

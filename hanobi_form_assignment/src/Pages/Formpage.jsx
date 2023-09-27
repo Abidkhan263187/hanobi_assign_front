@@ -29,7 +29,7 @@ export const FormPage = () => {
     navigate(`/result`)
 
   }
-// this api call is for checking if username is already registered or not 
+  // this api call is for checking if username is already registered or not 
   useEffect(() => {
     (async () => {
       try {
@@ -48,7 +48,8 @@ export const FormPage = () => {
                 email: user.email,
                 name: user.name,
                 dob: "",
-              })} else {
+              })
+            } else {
               setFormData({
                 phNo: '',
                 email: '',
@@ -59,7 +60,8 @@ export const FormPage = () => {
           })
       } catch (error) {
         console.log(error)
-      }})()
+      }
+    })()
 
   }, [userName])
 
@@ -95,6 +97,7 @@ export const FormPage = () => {
             placeholder="Phone Number"
             value={formData.phNo}
             onChange={handleInputChange}
+            autoComplete="off"
             required
           />
         </FormControl>
@@ -107,6 +110,7 @@ export const FormPage = () => {
             value={formData.email}
             onChange={handleInputChange}
             required
+            autoComplete="off"
           />
         </FormControl>
         <FormControl mt={4}>
@@ -118,6 +122,7 @@ export const FormPage = () => {
             value={formData.name}
             onChange={handleInputChange}
             required
+            autoComplete="off"
           />
         </FormControl>
         <FormControl mt={4}>
@@ -129,6 +134,7 @@ export const FormPage = () => {
             value={formData.dob}
             onChange={handleInputChange}
             required
+            autoComplete="off"
           />
         </FormControl>
         <Button mt={4} type='submit' colorScheme="blue" >
