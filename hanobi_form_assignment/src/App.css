@@ -1,0 +1,75 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+
+/* Home pages css start  */
+#home_container{
+  width: 30%;
+  margin:  5% auto;
+  padding: 15px 30px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  border-radius: 10px;
+
+}
+#home_container button{
+background-color: #0A66C2;
+color: white;
+}
+#home_heading{
+  color: red;
+  margin-top: 15px;
+  font-size: x-large;
+
+}
+/* Home page css end  */
+
+
+/* form page start  */
+#formPage_container{
+  width: 40%;
+  margin: auto;
+  padding: 20px 30px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  border-radius: 10px;
+}
+#formPage_heading{
+  font-size: larger;
+}
+/* form page end   */
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
